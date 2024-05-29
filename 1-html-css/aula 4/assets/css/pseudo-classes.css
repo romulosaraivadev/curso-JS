@@ -1,0 +1,57 @@
+.heading{ 
+    /* transition: 
+    all: é para todo os efeitos usados
+    1s: é o tempo da transição
+    ease-in-out: é a transição de entrada e saida*/
+    transition: all 300ms ease-in-out;
+}
+
+.heading:hover {
+    background: red;
+}
+
+a{
+    color: darkorange;
+}
+a:link{ /*para links que nunca foi visitado*/
+    color: deeppink;
+}
+
+a:visited{ /*para links que ja foram visitados*/
+    color: firebrick;
+}
+
+a:hover{
+    background: darkslateblue;
+    color: white;
+    text-decoration: none;
+}
+
+a:active{ /*para quando o link esta ativo*/
+    background: darkslategray;
+    color: darkslategrey;
+    text-decoration: none;
+}
+
+input:focus{ /* quando tem um objeto selecinado como um input*/
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.348);
+    outline: none;
+    border: 1px solid black;
+}
+
+input:disabled{
+    background-color: rebeccapurple;
+    cursor: not-allowed;
+}
+
+input#checkbox:checked{ /*muda as configurações quando o checkbox for clicado*/
+  width: 30px;
+  height: 30px; 
+}
+input#checkbox:checked + p{ /*qundo clica no checkbox o proximo item dele muda algo*/
+    background: red;
+}
+
+.pai .lista li:last-child{
+    background-color: red;
+}
