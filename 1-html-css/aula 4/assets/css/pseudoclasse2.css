@@ -1,0 +1,15 @@
+ul li:nth-child(odd) { /* voce pode escolher qual vai escolher por ordem ou por par "even" ou impar "odd"*/
+    background-color: purple;
+}
+
+ul li:nth-child(even) { 
+    background-color: darkcyan;
+}
+
+ul li:nth-child(3n) { /*a cada 3 itens a cor vai mudar*/
+    background-color: darkgoldenrod;
+}
+
+ul li:nth-child(3n+5) { /*a cada 3 começando do 5 item a cor vai mudar*/
+    background-color: wheat;
+}

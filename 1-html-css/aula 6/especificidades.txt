@@ -1,0 +1,7 @@
+ordem de especificidades do css
+1 ID
+2 Class
+3 aributos
+4 pseudo-classes
+5 elementos 
+6 pseudo-elementos

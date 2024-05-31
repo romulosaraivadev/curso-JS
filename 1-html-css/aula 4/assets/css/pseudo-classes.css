@@ -55,3 +55,14 @@ input#checkbox:checked + p{ /*qundo clica no checkbox o proximo item dele muda a
 .pai .lista li:last-child{
     background-color: red;
 }
+input#cor:checked + p{
+    color:yellow;
+}
+
+input#cor:not(:checked)+p{
+    color: red;
+}
+p:not(.meio){ /* not: é para quando tem um elemento que não queira mudar*/
+    color: blue;
+}
+
