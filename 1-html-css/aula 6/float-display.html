@@ -4,10 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .grid{
+            box-sizing: border-box;
+            padding: 15px;
+        }
+
+        .grid::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .grid .col{
+            box-sizing: border-box;
+            width:33.33%;
+            height: 300px;
+            float: left; /*serve para somar as margens*/
+            padding: 15px;
+        }
+        
+        .grid .col-content{
+            width:100%;
+            height: 100%;
+            background-color: red;
+        }
+
+        
+    </style>
 </head>
 <body>
     <div class="grid">
-        <divi class="col"></divi>
+        <div class="col">
+            <div class="col-content">
+                Conteúdo
+            </div>
+        </div>
+        <div class="col">
+            <div class="col-content">
+                Conteúdo
+            </div>
+        </div>
+        <div class="col">
+            <div class="col-content">
+                Conteúdo
+            </div>
+        </div><div class="col">
+            <div class="col-content">
+                Conteúdo
+            </div>
+        </div><div class="col">
+            <div class="col-content">
+                Conteúdo
+            </div>
+        </div><div class="col">
+            <div class="col-content">
+                Conteúdo
+            </div>
+        </div>
+
+        
     </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam quo nesciunt optio excepturi odio laborum, est officia unde corporis illo dignissimos labore perferendis asperiores in. Architecto impedit doloremque modi.</p>
 </body>
 </html>
