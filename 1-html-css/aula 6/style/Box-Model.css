@@ -1,0 +1,18 @@
+.texto{
+    /*inclui padding, borda e conteudo dentro do tamanho do conteudo*/
+    box-sizing: border-box;
+    /*toda div ja vem com display block nativamente*/
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    /*para designer responsivo*/
+    max-height:500px;
+    max-width: 600px;
+    min-height: 100px;
+    min-width: 0;
+    /*overflow:hidden serve para colocar o conteudo paradentro da div*/
+    overflow: auto; 
+    margin: 0 auto 50px auto;
+    padding: 50px;
+    border: 5px solid black;
+}
