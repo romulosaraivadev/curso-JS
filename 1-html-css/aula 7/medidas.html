@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas</title>
+    <style>
+        html{
+            font-size: 62.5%;
+            scroll-behavior: smooth;
+             /*scroll-behavior: smooth se aplica na tag do htmlou no reset */
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        .pai{
+            width: 50rem; /*500px*/
+            height: 100vh;
+            background: yellow;
+            
+        }
+
+        .pai > div{
+            width: 50%;
+            height: 50rem;
+            background-color: blue;
+        }
+
+        p{
+            font-size: 2vmax;
+        }
+        .color-two {
+            background-color: turquoise;
+        }
+
+        .color-three{
+            background-color: violet;
+        }
+        
+    </style>
+</head>
+<body>
+    <a href="#one">One</a>
+    <a href="#two">Two</a>
+    <a href="#three">Three</a>
+    <div class="pai" id="one">
+        <div></div>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consectetur doloribus, quia culpa iure vitae odio iusto labore quod voluptatem. Suscipit iste nobis alias vitae deserunt pariatur nulla sit minus.</p>
+    </div>
+    <div class="pai color-two" id="two">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consectetur doloribus, quia culpa iure vitae odio iusto labore quod voluptatem. Suscipit iste nobis alias vitae deserunt pariatur nulla sit minus.</p>
+    </div>
+    <div class="pai color-three" id="three">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consectetur doloribus, quia culpa iure vitae odio iusto labore quod voluptatem. Suscipit iste nobis alias vitae deserunt pariatur nulla sit minus.</p>
+    </div>
+</body>
+</html>

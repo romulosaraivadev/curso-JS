@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento</title>
+    <style>
+        *{
+            margin: 0;
+        }
+
+        .pai{
+
+        }
+
+        .filha1, .filha2, .filha3 {
+            width: 300px;
+            height: 300px;
+            background-color: rgba(255, 0, 0);
+            margin: 10px;
+          
+        }
+
+        .filha1{
+            
+            
+
+        }
+
+        .filha2{
+            background-color: greenyellow;
+            position: fixed; /* o elemento fica fixo no lugar onde esta posicionado indepedente se deixar a pagina descer*/
+            top: 30%;
+            right: 0;
+            z-index: 1;
+            
+        }
+
+        .filha3{
+            background-color: blue;
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+        .outra{
+            font-size: 50px;
+            background: white;
+            position: absolute; 
+            top: 50px;
+            left: 50px;      
+         }
+    </style>
+</head>
+<body>
+    <div class="pai">
+        <div class="filha1"></div>
+        <div class="filha2"></div>
+        <div class="filha3">
+            <span class="outra">123</span>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam id voluptatum molestias amet cum, ut quam corporis eum dicta illo quae incidunt perferendis sed doloribus, minima sint suscipit in est!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam id voluptatum molestias amet cum, ut quam corporis eum dicta illo quae incidunt perferendis sed doloribus, minima sint suscipit in est!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam id voluptatum molestias amet cum, ut quam corporis eum dicta illo quae incidunt perferendis sed doloribus, minima sint suscipit in est!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam id voluptatum molestias amet cum, ut quam corporis eum dicta illo quae incidunt perferendis sed doloribus, minima sint suscipit in est!</p>
+    </div>
+</body>
+</html>
