@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap; /*atalho para flex-direction e flex-wrap*/
+    background-color: yellow;
+    
+   /* align-content: center; alinha o conteudo */
+}
+
+.flex-item{
+    color: white;
+    background-color: red;
+    /*flex-grow: 1; /*permite que divida o espaço entre os conteudos*/
+    /*flex-basis: 320px; /*base inicial do tamanho dos itens*/
+   /* flex-shrink: 0; /* :1 permite que o conteudo mude o tamanho :0 não permite que o conteudo mude de tamanho */ 
+    /*atalho é flex*/
+    flex: 1 1 320px; /*o primeiro é flex grow o segundo é flex shrink o terceiro é flex basis*/
+    height: 200px;
+    
+}
+
+.flex-item:nth-child(2){
+    flex: 2 1 320px;
+    background-color: purple;
+}
+
