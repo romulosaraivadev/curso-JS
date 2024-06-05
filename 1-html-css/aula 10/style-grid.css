@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:sans-serif;
+    font-size: 40px;
+}
+
+.grid{
+    /*grid-template-columns: repeat(3, 1fr); /*funçao de repetir as colunas*/
+    /*grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* auto-fill é para o conteudo se adaptar conforme o tamanho da dela e o minmax são as dimensões usadas*/
+    max-width: 1200px;
+    margin-right: -30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    /* gap: 30px  35px ; */
+}
+
+.grid div{
+    background-color: tomato;
+    min-height: 100px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.grid div:nth-child(5){
+    background-color: darkred;
+    /* grid-column: span 2 / span 2;
+    grid-row: um / quatro; */
+    
+}
+
+/* @media (max-width: 768px) {
+    .grid div:nth-child(5){
+        grid-column: span 1;
+    }
+} */
