@@ -1,4 +1,4 @@
-// objetos
+objetos
 const pessoal = {
     nome: 'Rômulo',
     sobrenome: 'Saraiva',
@@ -21,17 +21,17 @@ pessoal.fala();
 
 
 
-/* function criaPessoa (nome, sobrenome, idade){ //parametro
-    return {nome,sobrenome,idade};
-}
+// function criaPessoa (nome, sobrenome, idade){ //parametro
+//     return {nome,sobrenome,idade};
+// }
 
-const pessoal = criaPessoa('Rômulo', 'Saraiva', 29); // argumento
-const pessoa2 = criaPessoa('Andressa', 'Gomes', 24); // argumento
-const pessoa3 = criaPessoa('Rita', 'Gomes', 45); // argumento
-const pessoa4 = criaPessoa('Marilene', 'David', 54); // argumento
-const pessoa5 = criaPessoa('Samily', 'Saraiva', 24); // argumento
+// const pessoal = criaPessoa('Rômulo', 'Saraiva', 29); // argumento
+// const pessoa2 = criaPessoa('Andressa', 'Gomes', 24); // argumento
+// const pessoa3 = criaPessoa('Rita', 'Gomes', 45); // argumento
+// const pessoa4 = criaPessoa('Marilene', 'David', 54); // argumento
+// const pessoa5 = criaPessoa('Samily', 'Saraiva', 24); // argumento
 
-console.log(pessoal.nome, pessoa4.nome);*/
+// console.log(pessoal.nome, pessoa4.nome);
 
 
 /*const pessoal = {
