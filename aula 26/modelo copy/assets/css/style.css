@@ -27,13 +27,6 @@ body{
     border-radius: 10px;
 }
 
-.imc-exemplo {
-    display: flex;
-    gap: 80px;
-    line-height: 10px;
-
-}
-
 form input, form label, form button {
     display: block;
     width: 100%;
@@ -53,7 +46,7 @@ form input:focus {
     box-shadow: 0px 0px 5px 0px  var(--primary-color);
 }
 
-.button {
+form button {
     border:  none;
     background: var(--primary-color);
     color: white;
@@ -64,10 +57,19 @@ form input:focus {
     margin-top: 30px;
 }
 
-.button:hover{
+form button:hover{
     background-color: var(--primary-color-dark);
 }
 
-.button:active{
+form button:active{
     background-color: green ;
+}
+
+.paragrafo-resultado, .bad {
+    background-color: #0cd2c5;
+    padding: 10px 20px;
+}
+
+.bad{
+    background-color: rgb(177, 76, 76);
 }
