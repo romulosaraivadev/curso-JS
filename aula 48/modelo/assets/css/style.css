@@ -64,11 +64,3 @@ form button:hover{
 form button:active{
     background-color: green ;
 }
-
-.relogio{
-    font-size: 3em;
-}
-
-.pausado {
-    color: red;
-}
