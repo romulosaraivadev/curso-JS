@@ -10,6 +10,11 @@ function criaPessoa(nome, sobrenome, a, p) {
         },
         altura: a,
         peso: p,
+
+         get nomeCompleto(){
+            return `${this.nome} ${this.sobrenome}`
+        },
+
         //Getter
         get imc() {
             const indice = this.peso / (this.altura **2)
@@ -25,5 +30,6 @@ const p1 = criaPessoa('Romulo', 'Saraiva', 1.95, 90)
 console.log(p1.nome)
 console.log(p1.sobrenome)
 console.log(p1.imc)
+console.log(p1.nomeCompleto)
 const p2 = criaPessoa('Andressa', 'Gomes', 1.70, 60)
 console.log(p1.fala('falando sobre js'))
