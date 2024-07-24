@@ -11,10 +11,19 @@ object.DefineProperties (define varioas propriedades)
 Object.defineProperty (define uma propriedade)
 */
 const produto = {nome: 'produto', preco: 1.8};
-const caneca = Object.assign({}, produto, {material: 'porcelana'})
+// Object.defineProperty(produto, 'nome', {
+//     writable: false,
+//     configurable: false,
+//     value:'Qualquer outra coisa'
+// })
+// const caneca = Object.assign({}, produto, {material: 'porcelana'})
 
-caneca.nome = 'Luiz Otavio'
-caneca.preco = 2.8
+// caneca.nome = 'Luiz Otavio'
+// caneca.preco = 2.8
 // produto.nome = 'Luiz Otavio'
-console.log(produto)
-console.log(caneca)
+// console.log(Object.getOwnPropertyDescriptor(produto, 'nome'))
+// produto.nome ='outra coisa'
+
+for(let [chave, valor] of Object.entries(produto)) {
+    console.log(chave, valor)
+}
