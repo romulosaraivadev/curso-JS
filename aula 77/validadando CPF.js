@@ -57,5 +57,9 @@ ValidaCPF.prototype.isSequencia = function() {
     return sequencia === this.cpfLimpo
 }
 const cpf = new ValidaCPF('705.484.450-52');
-console.log(cpf.valida())
-// cpf.valida()
+
+if(cpf.valida()) {
+    console.log('Cpf valido')
+} else {
+    console.log('Cpf invalido')
+}
